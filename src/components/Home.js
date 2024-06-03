@@ -1,7 +1,6 @@
 // Home.js
 import React, { useState } from 'react';
 import Shader from './Shader';
-import Footer from './Footer';
 
 const Home = () => {
   const [color, setColor] = useState('');
@@ -39,7 +38,7 @@ const Home = () => {
         placeholder="Enter Hex Color Code"
         value={color}
         onChange={handleColorChange}
-        style={{width:'300px', height:'30px', padding: '10px', fontSize: '16px', border: 'none', border: '2px solid #4CAF50', outline: 'none', marginRight: '10px' }}
+        style={{width:'300px', height:'30px', padding: '10px', fontSize: '16px', border: '2px solid #4CAF50', outline: 'none', marginRight: '10px' }}
       />
       <button
         onClick={generateShades}
